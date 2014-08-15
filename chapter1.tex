@@ -1,0 +1,80 @@
+\section{Chapter 1}
+
+\textbf{textbf}
+
+\textit{textit}
+
+\url{http://example.com}
+
+\begin{quote}
+  quote
+\end{quote}
+
+\subsection{Label}
+
+  \subsubsection{Label header} \label{label-header}
+
+    Reference to this section: section~\ref{label-header}
+
+  \subsubsection{Cross chapter label}
+
+    Label on another chapter file: \ref{chapter2}
+
+\subsection{Figure}
+
+  \begin{figure}
+    \centering
+    \includegraphics{images/flower.jpg}
+    \caption{inside caption}
+    \label{figure}
+  \end{figure}
+
+  Figure reference: Figure~\ref{figure}.
+
+\subsection{Table}
+
+  \begin{table}
+    \caption{Table caption}
+    \label{table}
+    \begin{tabular}{rlc}
+      \hline
+      a0    & a1 & a2 \\
+      bbbb0 & b1 & b2 \\
+      \hline
+    \end{tabular}
+  \end{table}
+
+\subsection{Math}
+
+  Inline \(x^2\).
+
+  Display:
+
+  \begin{equation}
+    \label{equation}
+    x^2
+  \end{equation}
+
+  Equation reference: Equation~\ref{equation}.
+
+\subsection{Computer code}
+
+  Inline \lstinline|com_puter()| code.
+
+  \begin{lstlisting}
+    display code 1
+    display code 2
+  \end{lstlisting}
+
+  Set the language: TODO not highlighting. Why?
+
+  \begin{lstlisting}[language=Python]
+    def f(x):
+      return x + 1
+  \end{lstlisting}
+
+  \begin{lstlisting}[language=Ruby]
+    def f(x)
+      x + 1
+    end
+  \end{lstlisting}

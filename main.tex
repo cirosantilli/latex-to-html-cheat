@@ -1,0 +1,16 @@
+\documentclass[14pt]{article}
+\title{title}
+\author{author}
+\date{}
+\usepackage{floatrow} % Center all floats.
+\usepackage{graphicx} % graphicspath, includegraphics
+  \graphicspath{{./images/}}
+\usepackage{listings} % lstlisting, lstinline
+  \usepackage{lstautogobble}  % http://tex.stackexchange.com/questions/164993/indent-content-of-verbatim-lstlisting-environment-relative-to-containing-envir
+\usepackage{hyperref}
+\begin{document}
+  \maketitle
+  \tableofcontents
+  \input{chapter1}
+  \input{chapter2}
+\end{document}
