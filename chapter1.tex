@@ -22,14 +22,19 @@
 
 \subsection{Figure}
 
-  \begin{figure}
-    \centering
-    \includegraphics{images/flower.jpg}
-    \caption{inside caption}
-    \label{figure}
+  Small and large figures \ref{fig-small} \ref{fig-large}:
+
+  \begin{figure}[htb]
+    \includegraphics[width=2cm]{flower.jpg}
+    \caption{caption here}
+    \label{fig-small}
   \end{figure}
 
-  Figure reference: Figure~\ref{figure}.
+  \begin{figure}[htb]
+    \includegraphics[width=5cm]{flower.jpg}
+    \caption{caption here}
+    \label{fig-large}
+  \end{figure}
 
 \subsection{Table}
 
